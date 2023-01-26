@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function Footer() {
-    return (
-      <>
-       <div className='background background text-dark text-center p-2 mt-2'>
-        <p>copyright@Newsapp.com</p>
-       </div>
-      </>
-    )
-  }
-
+export default class Footer extends Component {
+    render() {
+        return (
+            <div className='background text-light text-center p-2 mt-2'>
+                <p>copyright@newsapp.com</p>
+            </div>
+        )
+    }
+}
