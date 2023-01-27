@@ -47,9 +47,9 @@ export default class Home extends Component {
             <div className='container-fluid'>
                 <h6 className='background text-light text-center p-2 mt-1'>{this.props.q} News Section</h6>
                 <InfiniteScroll
-                    dataLength={this.state.articles.length}
+                    dataLength={this.state.articles?.length}
                     next={this.fetchData}
-                    hasMore={this.state.articles.length < this.state.totalResults}
+                    hasMore={this.state.articles?.length < this.state.totalResults}
                     loader={
                         <div className='container mt-5 mb-5 text-center'>
                             <div className="spinner-border text-success" role="status">
